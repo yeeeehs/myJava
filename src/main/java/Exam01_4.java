@@ -1,18 +1,14 @@
 public class Exam01_4 {
     public static void main(String[] args) {
+        for(int i=1; i <= 7; i++){
+            int cnt = 0;
 
-        int n = 4;
-
-        for(int i=1; i<=2*n-1; i++){
-
-            int star;
-
-            if(i<=n) {
-                star = i;
+            if (i <= 4) {
+                cnt = i;
             } else {
-                star = 2 * n - i;
+                cnt = 8 - i;
             }
-            for(int j=1; j<=star; j++) {
+            for (int j = 0; j < cnt; j++) {
                 System.out.print("*");
             }
             System.out.println();
