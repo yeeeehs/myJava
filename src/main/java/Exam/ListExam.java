@@ -6,22 +6,22 @@ import java.util.List;
 public class ListExam {
     public static void main(String[] args) {
 
-        List<Integer> i = new ArrayList<>();
+        List<Integer> a = new ArrayList<>();
 
-        i.add(1);
-        i.add(2);
-        i.add(3);
-        i.add(4);
-        i.add(5);
+        a.add(1);
+        a.add(2);
+        a.add(3);
+        a.add(4);
+        a.add(5);
 
         System.out.println("2세대 반복문");
 
-        for(int num : i) {
+        for(int num : a) {
             System.out.println(num);
         }
 
         System.out.println("3세대 반복문");
 
-        i.forEach(num -> System.out.println(num));
+        a.forEach(num -> System.out.println(num));
     }
 }
